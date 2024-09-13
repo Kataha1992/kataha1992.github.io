@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>В краю магнолий</title>
+</head>
+<body>
+    <h1 id="tecpage"></h1>
+
+    <ul>
+        <li><a href="http://kubsu.ru">КубГУ (абсолютная гиперссылка)</a></li>
+        <li><a href="https://kubsu.ru">КубГУ (гиперссылка с протоколом https)</a></li>
+        <li><a href="https://kubsu.ru"><img src="C:\Users\Honor\Desktop\image.jpg" alt="Цветок" width="100" height="100"></a></li>
+        <li><a href="Inside.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+        <li><a href="Index.html">Сокращенная ссылка на главную страницу</a></li>
+        <li><a href="#tecpage">Ссылка на фрагмент текущей страницы</a></li>
+        <li><a href="Index.html?p1=v1&?p2=v2&?p3=v3">Ссылка с тремя параметрами в URL</a></li>
+        <li><a href="inside.html?id=tecpage">Ссылка с параметром id в URL</a></li>
+        <li><a href="Inside.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="../About/Ab2.html">Относительная ссылка на страницу в каталоге about</a></li>
+        <li><a href="../E2.html">Ссылка на страницу в каталоге уровня выше текущей</a></li>
+        <li><a href="../../p1.html">Ссылка на страницу в каталоге двумя уровнями выше текущей</a></li>
+        <li><p> Контекстная ссылка: <br>
+            <a href="https://www.youtube.com/watch?v=0X9a2dz1B9A">Крутая песня</a>
+        </p></li>
+        <li><a href="https://www.woman.ru/forum/">Ссылка на фрагмент страницы стороннего сайта</a></li>
+        <li>
+            <map name="primary">
+                <area shape="rect" coords="0,0,433,15" href="https://www.woman.ru/forum/?sort=1d" alt="Популярное">
+                <area shape="circle" coords="23,100,20" href="https://www.woman.ru/forum/?sort=new" alt="Новое">
+            </map>
+            <img usemap="#primary" src="C:\Users\Honor\Desktop\3301.jpg" alt="Фото">
+        </li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="https://vk.com/fctandam" rel="nofollow">Ссылка, по которой запрещен переход поисковиками</a></li>
+        <li><a href="https://minecraft.fandom.com/ru/wiki/" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+        <li>
+            <ol>
+                <li><a href="https://www.youtube.com/watch?v=oM9kdo6P1TMs" title="">Наведи на меня</a></li>
+                <li><a href="https://www.youtube.com/watch?v=JXNPNMTaip4" title="">И на меня тоже</a></li>
+                <li><a href="https://www.youtube.com/watch?v=huzmvqp8ouk" title="">Про меня не забудь</a></li>
+            </ol>
+        </li>
+        <li><a href="ftp://login:password@example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+    </ul>
+
+    <form action="test@example.com">
+        <label>ФИО: <input type="text"><br></label>
+        <label>Телефон: <input type="tel"><br></label>
+        <label>E-mail: <input type="email"><br></label>
+        <label>Дата рождения: <input type="date"><br></label>
+
+        <label>Пол:</label>
+        <label><input type="radio" name="gender">М</label>
+        <label><input type="radio" name="gender">Ж<br></label>
+
+        <label>
+            Любимый язык программирования: 
+            <select name="prog-lang" id="prog-lang">
+                <option value="">Pascal</option>
+                <option value="">JavaScript</option>
+                <option value="">PHP</option>
+                <option value="">Python</option>
+                <option value="">Java</option>
+                <option value="">С</option>
+                <option value="">С++</option>
+                <option value="">Haskel</option>
+                <option value="">Clojure</option>
+                <option value="">Prolog</option>
+                <option value="">Scala</option>
+            </select><br>
+        </label>
+
+        <label>
+            Биография:<br>
+            <textarea name="bio" id="bio"></textarea><br>
+        </label>
+        
+        <label><input type="checkbox">С контрактом ознакомлен(-а)</label><br>
+        <input type="submit" value="Сохранить">
+    </form>
+</body>
+</html>
